@@ -25,13 +25,13 @@ body {
 #computerText {
     color:red;
 }
-h1 {
+#title {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:white;
     text-align:center;
 }
 
-h2 {
+#rules {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:white;
     text-align:center;
