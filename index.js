@@ -6,6 +6,13 @@ let player;
 let computer;
 let result;
 
+
+
+
+
+
+
+
 choiceButtons.forEach(button => button.addEventListener("click", () => {
 
     player = button.textContent;
@@ -39,12 +46,13 @@ function checkWinner(){
         return "Draw!";
     }
     else if(computer == "ROCK"){
-        return (player == "PAPER") ? "You Win!" : "You Lose!"
+        return (player == "PAPER") ? "You Win! You chose Paper and the computer chose Rock" : "You Lose! The computer chose Scissors and you chose Rock"
     }
     else if(computer == "PAPER"){
-        return (player == "SCISSORS") ? "You Win!" : "You Lose!"
+        return (player == "SCISSORS") ? "You Win! You chose Scissors and the computer chose Paper" : "You Lose! The computer chose Rock and you chose Scissors"
     }
     else if(computer == "SCISSORS"){
-        return (player == "ROCK") ? "You Win!" : "You Lose!"
+        return (player == "ROCK") ? "You Win! You chose Rock and the computer chose Scissors" : "You Lose! The computer chose Paper and you chose Rock"
     }
 }
+
